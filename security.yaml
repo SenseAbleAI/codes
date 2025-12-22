@@ -1,0 +1,14 @@
+api_keys:
+  public_api_key: ""
+  internal_service_key: ""
+
+rate_limiting:
+  enabled: true
+  requests_per_minute: 60
+
+cors:
+  allow_origins:
+    - "*"
+  allow_methods:
+    - GET
+    - POST

@@ -1,0 +1,5 @@
+paths:
+  data_root: "data/"
+  model_cache: "cache/models/"
+  embedding_cache: "cache/embeddings/"
+  demo_outputs: "demo/outputs/"

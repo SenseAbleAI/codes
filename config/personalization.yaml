@@ -1,0 +1,18 @@
+sensory_accessibility_fingerprint:
+  dimensions:
+    vision_sensitivity: 0.0
+    hearing_sensitivity: 0.0
+    smell_sensitivity: 0.0
+    taste_sensitivity: 0.0
+    touch_sensitivity: 0.0
+
+  metaphor_familiarity:
+    local_culture: 0.5
+    global_culture: 0.5
+
+  rewrite_preferences:
+    minimal: 0.33
+    gentle: 0.33
+    full: 0.34
+
+  learning_rate: 0.05

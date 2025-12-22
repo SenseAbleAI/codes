@@ -1,0 +1,18 @@
+azure:
+  subscription_id: ""
+  resource_group: ""
+  region: ""
+
+authentication:
+  tenant_id: ""
+  client_id: ""
+  client_secret: ""
+
+endpoints:
+  openai_base_url: ""
+  copilot_orchestrator_url: ""
+
+deployment:
+  environment: "demo"
+  request_timeout_seconds: 60
+  max_retries: 3

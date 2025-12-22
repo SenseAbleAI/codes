@@ -1,0 +1,38 @@
+stg:
+  modalities:
+    - vision
+    - hearing
+    - smell
+    - taste
+    - touch
+    - cross_sensory
+
+  cross_modal_edges:
+    hearing:
+      - target: "touch"
+        cost: 0.3
+      - target: "vision"
+        cost: 0.5
+
+    vision:
+      - target: "touch"
+        cost: 0.4
+      - target: "hearing"
+        cost: 0.6
+
+    smell:
+      - target: "touch"
+        cost: 0.5
+      - target: "temperature"
+        cost: 0.4
+
+  cultural_variants:
+    temperate:
+      autumn_leaves: "dry_fallen_leaves"
+    tropical:
+      autumn_leaves: "sun_dried_leaves"
+
+  weights:
+    modality_shift: 0.4
+    cultural_penalty: 0.3
+    sensory_difficulty: 0.3

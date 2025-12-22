@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  senseable-backend:
+    build: .
+    container_name: senseable-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - .:/app
+    restart: unless-stopped

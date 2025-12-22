@@ -1,0 +1,27 @@
+llms:
+  primary_generation_model:
+    provider: "azure-openai"
+    model_name: "gpt-5"
+    deployment_name: ""
+    max_tokens: 1024
+    temperature: 0.3
+
+  reasoning_model:
+    provider: "azure-openai"
+    model_name: "gpt-5"
+    deployment_name: ""
+    max_tokens: 512
+    temperature: 0.2
+
+  validation_model:
+    provider: "azure-openai"
+    model_name: "gpt-5"
+    deployment_name: ""
+    max_tokens: 256
+    temperature: 0.0
+
+embeddings:
+  provider: "azure-openai"
+  model_name: "text-embedding-3-large"
+  deployment_name: ""
+  vector_dim: 3072

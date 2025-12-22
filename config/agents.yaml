@@ -1,0 +1,42 @@
+agents:
+  detector_agent:
+    role: "sensory_span_detection"
+    model: "reasoning_model"
+    input_schema: ["text", "language"]
+    output_schema: ["sensory_spans"]
+
+  difficulty_agent:
+    role: "sensory_difficulty_scoring"
+    model: "reasoning_model"
+    input_schema: ["sensory_spans", "user_fingerprint"]
+    output_schema: ["difficulty_scores"]
+
+  stg_agent:
+    role: "sensory_translation"
+    model: "reasoning_model"
+    input_schema: ["sensory_node", "user_fingerprint"]
+    output_schema: ["candidate_substitutions"]
+
+  cultural_agent:
+    role: "cultural_metaphor_retrieval"
+    model: "reasoning_model"
+    input_schema: ["sensory_span", "culture"]
+    output_schema: ["metaphor_candidates"]
+
+  rewrite_agent:
+    role: "accessible_rewrite_generation"
+    model: "primary_generation_model"
+    input_schema: ["text", "constraints", "preferences"]
+    output_schema: ["rewrite_candidates"]
+
+  validator_agent:
+    role: "semantic_fidelity_check"
+    model: "validation_model"
+    input_schema: ["original", "rewrite"]
+    output_schema: ["entailment_score", "similarity_score"]
+
+  refinement_agent:
+    role: "preference_update"
+    model: "reasoning_model"
+    input_schema: ["feedback_event"]
+    output_schema: ["updated_fingerprint"]

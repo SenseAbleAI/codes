@@ -1,0 +1,16 @@
+demo_mode: true
+
+personas:
+  - persona_id: "hearing_disability_user"
+    language: "en"
+    culture: "india"
+    impairments: ["hearing"]
+
+  - persona_id: "anosmia_user"
+    language: "en"
+    culture: "india"
+    impairments: ["smell"]
+
+cache:
+  enable: true
+  storage: "local"

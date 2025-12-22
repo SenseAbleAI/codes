@@ -1,0 +1,13 @@
+retrieval:
+  index_type: "dense"
+  embedding_model: "text-embedding-3-large"
+  top_k: 10
+
+reranking:
+  similarity_weight: 0.4
+  cultural_alignment_weight: 0.3
+  conventionality_weight: 0.2
+  sensory_load_weight: 0.1
+
+fallback:
+  zero_shot_generation: true
