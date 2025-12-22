@@ -21,7 +21,6 @@ The backend code in this repository is organized into modular components aligned
 - evaluation: Automatic metrics and evaluation utilities
 - config: YAML and JSON configuration files
 - utils: Shared utilities for embeddings, logging, and text processing
-- docs: Architecture and reproducibility documentation
 
 ## Running the Backend
 
