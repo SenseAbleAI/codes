@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.venv/
+.env
+
+# Git
+.git
+.gitignore
+
+# VSCode
+.vscode/
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Test / build
+.pytest_cache/
+build/
+dist/
+
+# Data
+data/
+
+# Docker directory itself (no need to copy build artifacts)
+docker/

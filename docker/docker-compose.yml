@@ -2,12 +2,18 @@ version: "3.9"
 
 services:
   senseable-backend:
-    build: .
+    # Build using repository root as context and the Dockerfile in docker/
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
     container_name: senseable-backend
     ports:
       - "8000:8000"
     environment:
-      - PYTHONPATH=/app
+      PYTHONPATH: /app
+    # Mount repository root into the container for development.
     volumes:
-      - .:/app
+      - ../:/app:rw
+    env_file:
+      - ../.env
     restart: unless-stopped
