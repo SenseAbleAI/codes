@@ -19,3 +19,7 @@ python-multipart
 jinja2
 loguru
 pytest
+requests
+python-dotenv
+typing-extensions
+pytest-cov
