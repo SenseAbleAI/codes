@@ -2,6 +2,13 @@
 
 SenseAble is a system for culturally aware, multisensory, and personalized text accessibility. The system adapts sensory-rich text into accessible alternatives while preserving meaning, cultural grounding, and user preferences.
 
+# Project Flowchart
+
+Below is a visual overview of the project architecture and workflow:
+
+![Project Flowchart](misc/flowchart.png)
+
+
 This repository contains the implementation corresponding to the SenseAble system described in our system demonstration paper (link will be provided soon).
 
 The backend implements:
